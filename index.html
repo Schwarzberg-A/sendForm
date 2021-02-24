@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/jquery.js" defer></script>
+  <script src="scripts/inputmask.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/index.js" defer></script>
+  <title>Form</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="form-wrapper" >
+      <h2 class="form-head">
+        Напишите нам
+      </h2>
+      <form class="form" id="form">
+        <div class="form-item">
+          <label class="src-only" for="name">Имя:</label>
+          <input class="form__input _req" id="name" name="name" type="text" placeholder="Имя*" minlength="2"
+            maxlength="99">
+        </div>
+        <div class="form-item">
+          <label class="src-only" for="phone">Телефон:</label>
+          <input class="form__input _req" id="phone" name="phone" type="tel" placeholder="Номер телефона*"
+            minlength="10" maxlength="20">
+        </div>
+        <div class="form-item">
+          <label class="src-only" for="email">E-mail:</label>
+          <input class="form__input _req _email" id="email" name="email" type="text" placeholder="E-mail*" minlength="3"
+            maxlength="80">
+        </div>
+        <div class="form-item">
+          <textarea name="textarea" class="form__input textarea" type="text" placeholder="Сообщение..." maxlength="399"></textarea>
+        </div>
+        <div class="form-item">
+          <input class="form__input agreement _req src-only" id="agreement" name="agreement" type="checkbox" checked>
+          <label class="checkbox" for="agreement">Я даю свое согласие на обработку данных в соответсвии с <a
+              href="privacy-policy.pdf" target="_blank">Условиями</a>*</label>
+        </div>
+        <button class="form__input btn" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
