@@ -31,7 +31,7 @@ $textarea = $_POST['textarea'];
 
 //Recipients
 $mail->setFrom('alekseitest@mail.ru');
-$mail->addAddress('aleksei.rukhmanov@gmx.de');    // Кому будет уходить письмо 
+$mail->addAddress('dm-grig@mail.ru');    // Кому будет уходить письмо 
 
 
 //Content
